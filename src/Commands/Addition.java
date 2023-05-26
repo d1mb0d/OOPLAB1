@@ -1,7 +1,4 @@
-//Addition.java
 package Commands;
-
-import Exceptions.CalcException;
 
 public class Addition extends Command{
     @Override

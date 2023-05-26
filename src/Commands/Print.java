@@ -1,7 +1,4 @@
-//Print.java
 package Commands;
-
-import Exceptions.CalcException;
 
 public class Print extends Command{
     @Override

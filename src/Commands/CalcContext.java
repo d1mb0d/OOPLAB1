@@ -1,11 +1,8 @@
-//CalcContext.java
 package Commands;
 
 import java.util.Stack;
 import java.util.HashMap;
 import java.util.Map;
-
-import Exceptions.*;
 
 public class CalcContext {
     private Stack<Double> stack;

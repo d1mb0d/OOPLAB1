@@ -1,7 +1,5 @@
 package Commands;
 
-import Exceptions.CalcException;
-
 public class Comment extends Command {
     private String comment;
 

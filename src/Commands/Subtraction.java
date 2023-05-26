@@ -1,7 +1,5 @@
-//Subtraction.java
 package Commands;
 
-import Exceptions.CalcException;
 public class Subtraction extends Command{
     @Override
     public void execute(CalcContext context) throws CalcException {

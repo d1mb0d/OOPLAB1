@@ -1,15 +1,10 @@
-//Definition.java
 package Commands;
-
-import Exceptions.CalcException;
 
 public class Definition extends Command {
     private String parameter;
     private double value;
 
-    public Definition() {
-        // Default constructor without arguments
-    }
+    public Definition() {}
 
     public Definition(String parameter, double value) {
         this.parameter = parameter;

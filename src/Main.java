@@ -1,11 +1,9 @@
-import Commands.*;
-import Exceptions.CalcException;
-
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Scanner;
 import Commands.CalcContext;
+import Commands.CalcException;
 import Commands.Command;
 
 public class Main {
@@ -16,7 +14,7 @@ public class Main {
 
         String fileName = "src/commands.txt";
 
-        boolean printExecuted = false; // Track if PRINT command has been executed
+        boolean printExecuted = false;
 
         try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
             String commandLine;
@@ -26,7 +24,6 @@ public class Main {
                     if (command != null) {
                         command.execute(context);
                         if (command instanceof Commands.Print) {
-                            // Set printExecuted to true if PRINT command is executed
                             printExecuted = true;
                         }
                     }

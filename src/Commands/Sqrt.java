@@ -1,7 +1,5 @@
-//Sqrt.java
 package Commands;
 
-import Exceptions.CalcException;
 public class Sqrt extends Command{
     @Override
     public void execute(CalcContext context) throws CalcException {

@@ -1,7 +1,5 @@
-//Multiplication.java
 package Commands;
 
-import Exceptions.CalcException;
 public class Multiplication extends Command {
     @Override
     public void execute(CalcContext context) throws CalcException {

@@ -1,9 +1,7 @@
-//CommandFactory.java
 import java.util.HashMap;
 import java.util.Map;
 
 import Commands.*;
-import Exceptions.CalcException;
 
 public class CommandFactory {
     private Map<String, Command> commandMap;
@@ -16,7 +14,6 @@ public class CommandFactory {
     }
 
     private void initializeCommands() {
-        // Create instances of the command classes
         Command popCommand = new Pop();
         Command additionCommand = new Addition();
         Command subtractionCommand = new Subtraction();
@@ -25,7 +22,6 @@ public class CommandFactory {
         Command sqrtCommand = new Sqrt();
         Command printCommand = new Print();
 
-        // Add the commands to the command map
         commandMap.put("POP", popCommand);
         commandMap.put("+", additionCommand);
         commandMap.put("-", subtractionCommand);
@@ -37,7 +33,6 @@ public class CommandFactory {
 
     public Command getCommand(String inputText) throws CalcException {
         if (Comment.isComment(inputText)) {
-            // Handle comment line
             return Comment.createComment(inputText);
         }
 
